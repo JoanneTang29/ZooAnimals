@@ -2,11 +2,12 @@ import React from 'react';
 
 // Additional imports
 import Animals from './Animals';
+import Nav from './Nav';
 
 const App = () => {
   return (
     <div>
-      <h1>Zoo Animals</h1>
+      <Nav />
       <Animals />
     </div>
   );
