@@ -21,23 +21,21 @@ const Animals = () => {
 
      <div class="ui card" key={element.id}>
       <div class="image">
-        <img>{element.image_link}</img>
+        <img src={element.image_link} alt='animals'></img>
       </div>
       <div class="content">
-        <a class="header">Kristy</a>
+        <h1 class="header">{element.name}</h1>
         <div class="meta">
-          <span class="date">Joined in 2013</span>
+          <span class="date">{element.habitat}</span>
         </div>
         <div class="description">
-          Kristy is an art director living in New York.
+         <p>Diet: {element.diet}</p> 
+         <p>Weight: {element.weight_min}-{element.weight_max}</p> 
+         <p>Lifespan: {element.lifespan} years </p>
+          
         </div>
       </div>
-      <div class="extra content">
-        <a>
-          <i class="user icon"></i>
-          22 Friends
-        </a>
-      </div>
+     
     </div>
     );
   }); 
